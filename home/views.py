@@ -8,7 +8,11 @@ from .models import Department, Doctors
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+        
+    dict_docs = {
+    'doctors': Doctors.objects.all()
+    }
+    return render(request, 'index.html',dict_docs)
 
 def about(request):
     return render(request, 'about.html')
