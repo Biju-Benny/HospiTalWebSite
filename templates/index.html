@@ -37,6 +37,11 @@ Home
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  $( document ).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  });
 
   
   <h1 class="text-center">Our Doctors</h1>
@@ -56,8 +61,3 @@ Home
 
 {% endblock %}
 
-$( document ).ready(function(){
-  $('.carousel').carousel({
-    interval: 2000
-  })
-});
